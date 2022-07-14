@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gimbal Ghost</title>
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+	<link rel="manifest" href="/icons/site.webmanifest">
+	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#000000">
+	<link rel="shortcut icon" href="/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2563eb">
+	<meta name="msapplication-config" content="/icons/browserconfig.xml">
+	<meta name="theme-color" content="#2563eb">
+
+	<meta property="og:url" content="https://gimbal-ghost.github.io" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Gimbal Ghost" />
+	<meta property="og:description" content="Render 3D Video of Transmitter Gimbals from Blackbox Logs" />
+	<meta property="og:image" content="https://gimbal-ghost.github.io/gimbal-ghost.png" />
+</head>
+
+<body class="bg-slate-900 text-slate-200">
+	<div class="grid h-screen place-items-center">
+		<div class="flex flex-col items-center">
+			<img src="/gimbal-ghost.png" alt="Gimbal Ghost" class="object-contain h-40 mb-6">
+		
+			<h1 class="text-center text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-blue-800">
+				Gimbal Ghost
+			</h1>
+		
+			<h2 class="text-center text-xl font-semibold mb-3">
+				Render 3D Video of Transmitter Gimbals from Blackbox Logs
+			</h2>
+		
+			<h3 class="text-center text-slate-400 mb-6">
+				Think stick cam for your flight videos, but with a ghost moving the gimbals.
+			</h3>
+
+			<video class="mb-6" autoplay loop muted playsinline>
+				<source src="/example-render.webm" type="video/webm" />
+				<source src="/example-render.mov" type="video/mp4" codecs="hvc1" />
+			</video>
+			
+			<a href="https://github.com/gimbal-ghost/gimbal-ghost/releases/latest/download/GimbalGhost.exe" class="mb-6" download>
+				<button 
+					id="download"
+					class="
+						text-xl
+						font-bold
+						active:bg-slate-800
+						active:text-slate-100
+						rounded-full
+						hover:outline
+						outline-offset-4
+						p-4
+						disabled:cursor-not-allowed
+						disabled:opacity-50
+						outline-blue-600
+						bg-gradient-to-b
+						from-blue-500
+						to-blue-800
+					" 
+				>
+					Download
+				</button>
+			</a>
+
+			<a href="https://github.com/gimbal-ghost/gimbal-ghost" class="hover:underline">
+				Check out the repository on GitHub
+			</a>
+		</div>
+	</div>
+
+	<script type="module" src="./src/main.js"></script>
+</body>
+</html>

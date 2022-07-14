@@ -1,0 +1,26 @@
+{
+  "name": "gimbal-ghost.github.io",
+  "version": "1.0.0",
+  "description": "Gimbal Ghost landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gimbal-ghost/gimbal-ghost.github.io.git"
+  },
+  "author": "Joshua Davidson",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/gimbal-ghost/gimbal-ghost.github.io/issues"
+  },
+  "homepage": "https://github.com/gimbal-ghost/gimbal-ghost.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6",
+    "vite": "^2.9.14"
+  }
+}
